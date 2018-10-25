@@ -1,0 +1,22 @@
+{
+  "name": "rice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 5200 index.html"
+  },
+  "author": "foryukiz",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-cache": "^16.6.0-alpha.8af6728",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "parcel-bundler": "^1.10.1"
+  }
+}
