@@ -18,7 +18,7 @@ class App extends React.PureComponent {
         {this.state.invoiceId}
         <button onClick={this.handleClick.bind(this, 1)}>+</button>
         <Suspense maxDuration={1000} fallback={<div>Loading...</div>}>
-          <Invoice invoiceId={this.state.invoiceId} />
+          <Invoice invoiceId={this.state.invoiceId} ms={100} />
         </Suspense>
       </div>
     )

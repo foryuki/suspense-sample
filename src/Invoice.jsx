@@ -1,7 +1,5 @@
 import React from 'react'
-import { createCache, createResource } from 'react-cache'
-
-const cache = createCache()
+import { unstable_createResource as createResource } from 'react-cache'
 
 const InvoiceResource = createResource(
   (id) => {
@@ -13,7 +11,7 @@ const InvoiceResource = createResource(
 )
 
 const Invoice = ({ invoiceId }) => {
-  let invoice = InvoiceResource.read(cache, invoiceId)
+  let invoice = InvoiceResource.read(invoiceId)
   return (
     <h1>{invoice.number}</h1>
   )
